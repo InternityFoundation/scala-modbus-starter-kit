@@ -9,7 +9,7 @@ import com.typesafe.config.ConfigFactory
 object AppConfig {
 
   private val config = ConfigFactory.load()
-  val host: String = config.getString("modbus.host")
+  val hostName: String = config.getString("modbus.host")
   val port: Int = config.getInt("modbus.port")
   val connectionTimeout: Int = config.getInt("modbus.connectionTimeout")
   val startingRegister: Int = config.getInt("modbus.startingRegister")
